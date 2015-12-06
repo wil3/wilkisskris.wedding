@@ -55,7 +55,7 @@
 	a
 	{
 		text-decoration: none;
-		color: #80BA8E;
+		color: #000; /*#80BA8E;*/
 	}
 	
 	a:hover
@@ -111,6 +111,10 @@
 			display: block;
 			margin: 1.5em 0 0 0;
 			padding: 0 0 0.5em 0;
+		}
+		.byline a {
+
+			color: #fff;
 		}
 		
 	footer
@@ -538,7 +542,7 @@
 	#featured
 	{
 		position: relative;
-		background: #f2f2f2;
+		background: #ccedff;
 		text-align: center;
 	}
 	
