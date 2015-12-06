@@ -1,0 +1,15 @@
+#SMTP Settings
+smtp:
+    host:
+    port:
+    useSSL:
+    user:
+    password:
+
+#EMAIL
+email:
+    mail_from:
+    mail_from_email:
+    subject:
+    message:
+    message_render:
