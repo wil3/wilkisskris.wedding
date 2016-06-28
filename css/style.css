@@ -19,18 +19,19 @@
 		font-size: 11pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #777;
+		color: #444;
 	}
 
 	h1,h2,h3,h4,h5,h6
 	{
 		font-weight: 300;
 		color: #777;
+		font-family: 'Roboto', sans-serif;
 	}
 	
 		h2
 		{
-			font-family:hdfont;
+		/*	font-family:hdfont;*/
 			letter-spacing: 2px;
 			color: #444;
 		}
@@ -117,6 +118,19 @@
 			color: #fff;
 		}
 		
+		.announce {
+
+			background-color:#000;
+			opacity:0.5;
+			padding:10px;
+			width:100% !important;
+			max-width:100% !important;
+		}
+.announce p {
+color:#fff;
+font-size:20px;
+}
+
 	footer
 	{
 		margin-top: 1em;
@@ -347,14 +361,14 @@
 		    src: url('../fonts/f/the_King__26_Queen_font.ttf'); /*URL to font*/
 		}
 #hd {
-	font-family: hdfont;
+	/*font-family: hdfont;*/
 	font-size:50px;
-	color:#444;
+	color:#fff;
 }
 	#header
 	{
 		position: relative;
-		background: url(../images/header.jpg) no-repeat center center;
+		background: url(../images/vancouver.jpg) no-repeat center center;
 		background-attachment: fixed;
 		background-size: cover;
 		text-align: center;
@@ -573,7 +587,7 @@
 	{
 		position: relative;
 		text-align: center;
-		background: url(../images/header.jpg) no-repeat center center;
+		background: url(../images/vancouver.jpg) no-repeat center center;
 		background-attachment: fixed;
 		background-size: cover;
 	}
