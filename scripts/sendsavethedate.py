@@ -30,7 +30,7 @@ class SaveTheDateSender:
                 email = row[1].strip()
                 if name and email:
                     self._send_single(name, email)
-                    time.sleep(1)
+                    time.sleep(2)
 
 
     def _send_single(self, name, email):
@@ -39,7 +39,7 @@ class SaveTheDateSender:
             message.attach(data=open(self.email['calendarevent'], 'rb'), filename='Event.ics')
         response = message.send(to = (name, email), render = {'firstname': name}, smtp = self.smtp)
         if response.status_code not in [250, ]:
-            print "Failed to send to: ", email
+            print "Failed to send to: {} Error code {}".format(email, response.status_code)
         else:
             print "Email successfully sent to {} at {}".format(name, email)
 
